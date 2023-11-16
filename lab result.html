@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="image" href="2.png">
+    <title>result</title>
+    <script>
+        function xe() {
+            var b,e,f,h;
+            var a=["Miley Cyrus","Taylor Swift","Selena Gomez","Katy Perry","Rihanna","Nicki Minaj","Beyonce","Ariana Grande","Justin Bieber","Lady Gaga"]
+            var c=["Chennai","Dehli","Mumbai","Kolkata","Varanasi","Bangalore","Patna","Mysore","Trivandram","Kochi","Coimbatore","vellore","Amaravathi","vizag","Ahmedabad"];
+            var i=c.length-1;
+            var x=a.length-1;
+            f = Math.floor(Math.random() * 1000 + 1);
+            h= Math.floor(Math.random() * 10000 + 1000);
+            b = Math.floor(Math.random() * 80 + 1);
+            document.getElementById('a').innerHTML = a[Math.floor(Math.random() * x + 1)];
+            document.getElementById('b').innerHTML = b;
+            document.getElementById('c').innerHTML = "Male";
+            document.getElementById('d').innerHTML = c[Math.floor(Math.random() * i + 1)];
+            document.getElementById('e').innerHTML = "9"+Math.floor(Math.random() * 9 + 1)+Math.floor(Math.random() * 9 + 1)+Math.floor(Math.random() * 9 + 1)+Math.floor(Math.random() * 9 + 1)+Math.floor(Math.random() * 9 + 1)+Math.floor(Math.random() * 9 + 1)+Math.floor(Math.random() * 9 + 1)+Math.floor(Math.random() * 9 + 1)+Math.floor(Math.random() * 9 + 1);
+            document.getElementById('i').innerHTML = f;
+            document.getElementById('h').innerHTML = "&#8377;"+h;
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="lab result.css">
+</head>
+
+<body onload="xe()">
+
+    <div class="x" >
+        <h1>Lab Result</h1>
+
+    </div>
+
+    <div class="a">
+        <table>
+            <tr>
+                <td colspan="2">
+                    <img src="user.png" height="100px" width="100" align="right" onclick="xe()">
+                </td>
+            </tr>
+            <tr>
+                <th>Name:</th>
+                <td id="a">
+                </td>
+            </tr>
+            <tr>
+                <th>Age:</th>
+                <td id="b"></td>
+            </tr>
+            <tr>
+                <th>Gender:</th>
+                <td id="c"></td>
+            </tr>
+            <tr>
+                <th>City:</th>
+                <td id="d"></td>
+            </tr>
+            <tr>
+                <th>Phone:</th>
+                <td id="e"></td>
+            </tr>
+            <tr>
+                <th>Patiend No:</th>
+                <td id="i"></td>
+            </tr>
+            <tr>
+                <th>Result Name:</th>
+                <td id="f">ECG</td>
+            </tr>
+            <tr>
+                <th>Lab Result:</th>
+                <td id="g">Positive</td>
+            </tr>
+            <tr>
+                <th>Lab Fee:</th>
+                <td id="h"></td>
+            </tr>
+
+        </table>
+        <a href="lab.html">back</a>
+    </div>
+
+    <p>Always caring about your health, We are here to help you!</p>
+</body>
+
+</html>

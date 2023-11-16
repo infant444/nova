@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image" href="2.png">
+    <title>loading</title>
+    <style>
+        body{
+            overflow-y: hidden;
+        }
+        p{
+            font-size: 5em;
+            text-align: center;
+            margin-top: 50px;
+            color: rgb(0, 52, 129);
+        }
+        span{
+            font-size: 3em;
+            padding: 40px 50px;
+            border: 20px solid  rgb(0, 52, 129);
+            margin-top: 80px;
+            border-radius: 50%;
+        }
+    </style>
+    <title>loaded</title>
+    <script>
+        window.setInterval("load()",10000);
+        var myVar = setInterval(function(){time()}, 1000);
+        var i=9;
+        function time()
+        {
+            if(i<=0);
+            {
+                document.getElementById("pra").innerHTML="0"+i;
+                i--;
+            }
+        }
+        function load()
+        {
+            document.location.href="login.php";
+        }
+        
+    </script>
+</head>
+<body>
+<p>Load on</p> <br>
+<p><span id="pra">10</span></p>
+</body>
+</html>

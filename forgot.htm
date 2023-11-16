@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="image" href="2.png">
+    <title>Forgot Password</title>
+    <script src="login.js">
+
+    </script>
+    <style>
+        label {
+            font-size: 30px;
+            font-weight: 100;
+        }
+
+        input[type='text'] {
+            font-size: 20px;
+            width: 300px;
+            height: 20px;
+            padding: 0px 10px 0px;
+        }
+
+        input[type='button'] {
+            font-size: 25px;
+            color: white;
+            background-color: rgb(26, 26, 130);
+            margin-left: 150px;
+            margin-top: 30px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div>
+        <form>
+            <label for="uid">Enter the user id :</label>
+            <input type="text" name="uid" id="uid"><br>
+            <input type="button" onclick="pg()" value="Find the Password">
+        </form>
+        <p id="pra"></p>
+    </div>
+
+</body>
+
+</html>

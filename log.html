@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>                 
+   <link rel="shortcut icon" type="image" href="2.png">
+   <link rel="stylesheet" href="log.css" type="text/css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+   <script src="login.js"></script>
+   <title>code thon-login</title>
+</head>
+<body>
+   <div class="bg">
+      
+   </div>
+   <div class="form">
+      <h1>Login</h1>
+      <form id="for" method="get">
+         <label for="us" >Username</label><br>
+         <i class="fa fa-user" id="user"></i>
+         <input type="text" name="username" id="us" placeholder="Uasename" ><br>
+         <label for="pass">Password</label><br>
+         <i class="fa fa-lock" id="lock"></i>
+         <input type="password" name="password" id="pass" placeholder="Password"><br>
+         <label for="capcha">Enter capcha</label><br>
+         <input type="text" readonly id="capt"><input type="text" id="capcha"><br>
+         <input type="button" id="submit" value="Login" onclick="loginval()">
+      </form>
+      <p class="c1">Capcha is not visiabla<img src="refresh.png" onclick="cap()" width="40px"></p>
+      <p class="p1"><a href="forgot.html" class="a1">forgot Password</a>New User</p>
+      <p class="p2"><a href="register.php" class="a3"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign in</a></p>
+   </div>
+</body>
+</html>
